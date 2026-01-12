@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nové dílo. Stejný neklid. — THE MAGAZINE</title>
+  <meta name="description" content="Art článek o tom, proč nové dílo někdy nepřináší úlevu, ale další vrstvu neklidu." />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/utilities.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <style>
+    .dz-hero { margin: 0 0 1.5rem; }
+    .dz-hero img { width: 100%; height: min(70vh, 640px); object-fit: cover; display: block; }
+    .dz-head { position: relative; padding-top: .5rem; padding-bottom: 1.25rem; }
+    .dz-back {
+      position: absolute; top: 0; right: 0;
+      text-decoration: none; font-size: .95rem;
+      padding: .5rem .75rem; border: 1px solid currentColor; border-radius: 999px;
+    }
+    .dz-back:hover, .dz-back:focus-visible { opacity: .85; }
+    .dz-title { font-size: clamp(1.9rem, 3.6vw, 3.2rem); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 1rem; }
+    .dz-deck { font-size: clamp(1.1rem, 1.6vw, 1.35rem); line-height: 1.5; max-width: 62ch; margin: 0; opacity: .92; }
+    .dz-body { max-width: 72ch; }
+    .dz-body p { font-size: 1.06rem; line-height: 1.8; }
+    .dz-body h3 { margin: 2rem 0 .75rem; font-size: 1.35rem; letter-spacing: -0.01em; }
+    @media (max-width: 768px) {
+      .dz-back { position: static; display: inline-block; margin-top: 1rem; }
+      .dz-head { padding-top: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container header__inner header__inner--dazed">
+
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav__button" for="nav-toggle" aria-label="Otevřít menu">Menu</label>
+
+      <nav class="nav nav--left" aria-label="Navigace vlevo">
+        <ul class="nav__list nav__list--left">
+          <li><a class="nav__link" href="latest.html">Latest</a></li>
+          <li><a class="nav__link" href="fashion.html">Fashion</a></li>
+          <li><a class="nav__link" href="beauty.html">Beauty</a></li>
+        </ul>
+      </nav>
+
+      <a class="brand brand--center" href="index.html" aria-label="THE MAGAZINE domů">
+        THE MAGAZINE
+      </a>
+
+      <nav class="nav nav--right" aria-label="Navigace vpravo">
+        <ul class="nav__list nav__list--right">
+          <li><a class="nav__link" href="music.html">Music</a></li>
+          <li><a class="nav__link" href="art.html">Art</a></li>
+          <li><a class="nav__link" href="culture.html">Culture</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__panel">
+        <ul>
+          <li><a href="latest.html">Latest</a></li>
+          <li><a href="fashion.html">Fashion</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="culture.html">Culture</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="content" class="article-page">
+    <figure class="dz-hero">
+      <img src="assets/img/painting.jpg" alt="Freska nebo velkoformátové malířské dílo s dramatickou scénou" />
+    </figure>
+
+    <header class="container dz-head">
+      <h1 class="dz-title">Nové dílo. Stejný neklid.</h1>
+
+      <h2 class="dz-deck">
+        Tvorba někdy nepřináší klid. Jen přesune napětí do nové podoby — a ty musíš začít znovu.
+      </h2>
+
+      <a class="dz-back" href="art.html">Zpět na Art</a>
+    </header>
+
+    <article class="container dz-body">
+      <p>
+        Vždycky se říká, že nové dílo uzavírá jednu kapitolu. Že dokončení přináší úlevu.
+        Jenže realita je často opačná: dokončíš, odstoupíš a neklid zůstane.
+      </p>
+
+      <p>
+        Není to chyba. Je to součást procesu. Když něco vytvoříš, dostane to tvar — ale zároveň to otevře další otázky:
+        proč to vzniklo, co ti to vzalo, co to po tobě chce dál.
+      </p>
+
+      <h3>Nejde o výsledek</h3>
+
+      <p>
+        Možná je největší iluze v tom, že „hotovo“ znamená „vyřešeno“.
+        U umění to často neplatí. Dílo je jen stopa, ne odpověď.
+      </p>
+
+      <p>
+        A právě proto některá díla působí tak silně: protože nejsou klidná. Jsou pravdivá.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 THE MAGAZINE — studentský projekt</p>
+      <p>UHK - Kelly Olšarová</p>
+    </div>
+  </footer>
+</body>
+</html>

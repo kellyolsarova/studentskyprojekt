@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Město jako moodboard — THE MAGAZINE</title>
+  <meta name="description" content="Culture článek o tom, jak město funguje jako vizuální knihovna pro styl, náladu a identitu." />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/utilities.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+
+  <style>
+    .dz-hero { margin: 0 0 1.5rem; }
+    .dz-hero img { width: 100%; height: min(70vh, 640px); object-fit: cover; display: block; }
+    .dz-head { position: relative; padding-top: .5rem; padding-bottom: 1.25rem; }
+    .dz-back {
+      position: absolute; top: 0; right: 0;
+      text-decoration: none; font-size: .95rem;
+      padding: .5rem .75rem; border: 1px solid currentColor; border-radius: 999px;
+    }
+    .dz-back:hover, .dz-back:focus-visible { opacity: .85; }
+    .dz-title { font-size: clamp(1.9rem, 3.6vw, 3.2rem); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 1rem; }
+    .dz-deck { font-size: clamp(1.1rem, 1.6vw, 1.35rem); line-height: 1.5; max-width: 62ch; margin: 0; opacity: .92; }
+    .dz-body { max-width: 72ch; }
+    .dz-body p { font-size: 1.06rem; line-height: 1.8; }
+    .dz-body h3 { margin: 2rem 0 .75rem; font-size: 1.35rem; letter-spacing: -0.01em; }
+    @media (max-width: 768px) {
+      .dz-back { position: static; display: inline-block; margin-top: 1rem; }
+      .dz-head { padding-top: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container header__inner header__inner--dazed">
+
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav__button" for="nav-toggle" aria-label="Otevřít menu">Menu</label>
+
+      <nav class="nav nav--left" aria-label="Navigace vlevo">
+        <ul class="nav__list nav__list--left">
+          <li><a class="nav__link" href="latest.html">Latest</a></li>
+          <li><a class="nav__link" href="fashion.html">Fashion</a></li>
+          <li><a class="nav__link" href="beauty.html">Beauty</a></li>
+        </ul>
+      </nav>
+
+      <a class="brand brand--center" href="index.html" aria-label="THE MAGAZINE domů">
+        THE MAGAZINE
+      </a>
+
+      <nav class="nav nav--right" aria-label="Navigace vpravo">
+        <ul class="nav__list nav__list--right">
+          <li><a class="nav__link" href="music.html">Music</a></li>
+          <li><a class="nav__link" href="art.html">Art</a></li>
+          <li><a class="nav__link" href="culture.html">Culture</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__panel">
+        <ul>
+          <li><a href="latest.html">Latest</a></li>
+          <li><a href="fashion.html">Fashion</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="culture.html">Culture</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="content" class="article-page">
+    <figure class="dz-hero">
+      <img src="assets/img/city.jpg" alt="Město při západu slunce, panorama a vrstvy architektury" />
+    </figure>
+
+    <header class="container dz-head">
+      <h1 class="dz-title">Město jako moodboard</h1>
+
+      <h2 class="dz-deck">
+        Ulice jsou feed. Výlohy jsou galerie. Lidi jsou reference. A tvoje nálada se skládá z detailů, které míjíš.
+      </h2>
+
+      <a class="dz-back" href="culture.html">Zpět na Culture</a>
+    </header>
+
+    <article class="container dz-body">
+      <p>
+        Město tě neustále „učí“ koukat. Ne jako turista, ale jako člověk, co sbírá textury: barvy omítek,
+        světlo v podchodu, zvuk tramvaje, nálepky na sloupech. Je to vizuální chaos, ale ve výsledku je to databáze.
+      </p>
+
+      <p>
+        Trendy se často tváří, že vznikají online. Ve skutečnosti je internet jen zrychlený přenos. Základ se děje offline:
+        v tom, co lidi nosí cestou do práce, jak kombinují věci bez „stylingu“, jak vypadá improvizace.
+      </p>
+
+      <h3>Reference nejsou krádež</h3>
+      <p>
+        Moodboard není kopírování. Je to mapování. Když si všímáš, co tě přitahuje, učíš se vlastní vkus a hranice.
+        A to je zdravější než slepě přebírat estetiku influencerů.
+      </p>
+
+      <h3>Chytrý trik: hledej kontrasty</h3>
+      <p>
+        Zajímá tě street? Najdi nejčistší business look. Zajímá tě minimalismus? Hledej přepálené barvy a kýč.
+        Vkus se nejrychleji zpřesní, když víš, co nechceš.
+      </p>
+
+      <p>
+        Město je moodboard, protože je upřímné. Neřeší tvoje algoritmy. Jen existuje — a ty si z něj bereš, co potřebuješ.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 THE MAGAZINE — studentský projekt</p>
+      <p>UHK - Kelly Olšarová</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Components — THE MAGAZINE</title>
+  <meta name="description" content="Komponentová knihovna pro studentský projekt THE MAGAZINE." />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/utilities.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container header__inner header__inner--dazed">
+
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav__button" for="nav-toggle" aria-label="Otevřít menu">Menu</label>
+
+      <nav class="nav nav--left" aria-label="Navigace vlevo">
+        <ul class="nav__list nav__list--left">
+          <li><a class="nav__link" href="articles.html">Latest</a></li>
+          <li><a class="nav__link" href="articles.html">Fashion</a></li>
+          <li><a class="nav__link" href="articles.html">Beauty</a></li>
+        </ul>
+      </nav>
+
+      <a class="brand brand--center" href="index.html" aria-label="THE MAGAZINE domů">
+        THE MAGAZINE
+      </a>
+
+      <nav class="nav nav--right" aria-label="Navigace vpravo">
+        <ul class="nav__list nav__list--right">
+          <li><a class="nav__link" href="articles.html">Music</a></li>
+          <li><a class="nav__link" href="articles.html">Art</a></li>
+          <li><a class="nav__link" href="articles.html">Culture</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__panel">
+        <ul>
+          <li><a href="articles.html">Latest</a></li>
+          <li><a href="fashion.html">Fashion</a></li>
+          <li><a href="beauty.html">Beauty</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="culture.html">Culture</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="content" class="site-main">
+
+    <section class="container section" aria-label="Komponenty">
+      <header class="section__head">
+        <h2>Components</h2>
+        <a href="index.html">Zpět na hlavní</a>
+      </header>
+
+      <section class="section" aria-label="Tlačítka">
+        <header class="section__head">
+          <h2>Buttons</h2>
+        </header>
+        <div class="u-flex u-gap-2 u-align u-wrap">
+          <a class="btn btn--primary" href="#">Primary</a>
+          <a class="btn btn--ghost" href="#">Ghost</a>
+          <button class="btn btn--primary" type="button" disabled>Disabled</button>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Tagy">
+        <header class="section__head">
+          <h2>Tags</h2>
+        </header>
+        <div class="u-flex u-gap-2 u-align u-wrap">
+          <span class="tag tag--outline">Fashion</span>
+          <span class="tag tag--outline">Beauty</span>
+          <span class="tag tag--outline">Music</span>
+          <span class="tag tag--outline">Culture</span>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Karty">
+        <header class="section__head">
+          <h2>Cards</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <img src="assets/img/hero/fashion.jpg" alt="Minimalistický fashion detail v neutrálních barvách" />
+            <div class="card__body">
+              <p class="tag tag--outline">Fashion</p>
+              <h3 class="card__title"><a href="article.html">Recyklace není aesthetic. Je to nutnost.</a></h3>
+              <p class="card__meta">Fashion · 6 min</p>
+            </div>
+          </article>
+
+          <article class="card card--compact">
+            <img src="assets/img/hero/trending-2.jpg" alt="Klidné ranní světlo v interiéru, pomalá atmosféra" />
+            <div class="card__body">
+              <p class="tag tag--outline">Beauty</p>
+              <h3 class="card__title"><a href="article.html">Rána, která nikam nespěchají</a></h3>
+              <p class="card__meta">5 min</p>
+            </div>
+          </article>
+
+          <article class="card card--featured">
+            <img src="assets/img/hero/trending-1.jpg" alt="Dramatická filmová atmosféra, pohyb a napětí" />
+            <div class="card__body">
+              <p class="tag tag--outline">movie</p>
+              <h3 class="card__title"><a href="article.html">Marty Supreme není film pro pohodlí</a></h3>
+              <p class="card__meta">7 min</p>
+              <div class="u-flex u-gap-2 u-align u-wrap">
+                <a class="btn btn--primary" href="article.html">Číst</a>
+                <a class="btn btn--ghost" href="articles.html">Všechny články</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="container section" aria-label="Studentský disclaimer">
+      <div class="callout callout--warning callout--bottom">
+        <h2 class="callout__title">Upozornění</h2>
+        <p>
+          Tato webová stránka byla vytvořena v rámci studentského zápočtového projektu.
+          Obsah je smyšlený a nepředstavuje skutečnou nabídku produktu či služby.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 THE MAGAZINE — studentský projekt</p>
+      <p>UHK - Kelly Olšarová </p>
+    </div>
+  </footer>
+
+</body>
+</html>

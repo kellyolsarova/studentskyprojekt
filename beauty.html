@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beauty — THE MAGAZINE</title>
+  <meta name="description" content="Beauty sekce studentského magazínu THE MAGAZINE." />
+
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/utilities.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container header__inner header__inner--dazed">
+      <input class="nav__toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav__button" for="nav-toggle" aria-label="Otevřít menu">Menu</label>
+
+      <nav class="nav nav--left" aria-label="Navigace vlevo">
+        <ul class="nav__list nav__list--left">
+          <li><a class="nav__link" href="latest.html">Latest</a></li>
+          <li><a class="nav__link" href="fashion.html">Fashion</a></li>
+          <li><a class="nav__link" href="beauty.html" aria-current="page">Beauty</a></li>
+        </ul>
+      </nav>
+
+      <a class="brand brand--center" href="index.html" aria-label="THE MAGAZINE domů">THE MAGAZINE</a>
+
+      <nav class="nav nav--right" aria-label="Navigace vpravo">
+        <ul class="nav__list nav__list--right">
+          <li><a class="nav__link" href="music.html">Music</a></li>
+          <li><a class="nav__link" href="art.html">Art</a></li>
+          <li><a class="nav__link" href="culture.html">Culture</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__panel">
+        <ul class="nav__panelList">
+          <li><a class="nav__link" href="latest.html">Latest</a></li>
+          <li><a class="nav__link" href="fashion.html">Fashion</a></li>
+          <li><a class="nav__link" href="beauty.html" aria-current="page">Beauty</a></li>
+          <li><a class="nav__link" href="music.html">Music</a></li>
+          <li><a class="nav__link" href="art.html">Art</a></li>
+          <li><a class="nav__link" href="culture.html">Culture</a></li>
+          <li><a class="nav__link" href="components.html">Components</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="site-main">
+    <section class="container section" aria-label="Beauty sekce">
+      <header class="section__head">
+        <h2>BEAUTY</h2>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <img src="assets/img/trending-2.jpg" alt="Minimalistický koupelnový detail v přirozeném světle" />
+          <div class="card__body">
+            <p class="tag tag--outline">Beauty</p>
+            <h3 class="card__title"><a href="rutina.html">Malé změny, které nejsou vidět. Ale fungují.</a></h3>
+            <p class="card__meta">4 min</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/ice.jpg" alt="Minimalistický koupelnový detail v přirozeném světle" />
+          <div class="card__body">
+            <p class="tag tag--outline">Beauty</p>
+            <h3 class="card__title"><a href="zima.html">Když je zima venku i v hlavě</a></h3>
+            <p class="card__meta">4 min</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/beauty.jpg" alt="Ranní atmosféra ve městě, světlo a klid" />
+          <div class="card__body">
+            <p class="tag tag--outline">Beauty</p>
+            <h3 class="card__title"><a href="article.html">SPF není jen letní věc (ačkoliv o tom nemluvíme)</a></h3>
+            <p class="card__meta">4 min</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" aria-label="Studentský disclaimer">
+      <div class="callout callout--warning callout--bottom" role="note">
+        <h2 class="callout__title">Upozornění</h2>
+        <p class="u-mb-0">
+          Tato webová stránka byla vytvořena v rámci studentského zápočtového projektu.
+          Obsah je smyšlený a nepředstavuje skutečnou nabídku produktu či služby.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 THE MAGAZINE — studentský projekt</p>
+      <p>UHK - Kelly Olšarová </p>
+    </div>
+  </footer>
+</body>
+</html>
