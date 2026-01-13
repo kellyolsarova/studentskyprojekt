@@ -50,7 +50,7 @@ a {
   text-underline-offset: 3px;
 }
 a:hover { color: var(--c-accent); }
-a:visited { color: #6a00a8; }
+a:visited { color: #000000; }
 a:focus-visible {
   outline: var(--focus-ring);
   outline-offset: var(--focus-offset);
